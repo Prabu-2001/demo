@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Layout from "./PROJECT/Layout";
+import Home from "./PROJECT/Home";
+import Productlayout from "./PROJECT/Product_Layout";
+import Mens from "./PROJECT/Mens";
+import Womens from "./PROJECT/Womens";
+import Kids from "./PROJECT/Kids";
+import Add_products from "./PROJECT/Add_product";
+import User from "./PROJECT/User";
+import "./index.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { BrowserRouter,Routes,Route } from "react-router-dom";
+
+function App()
+{
+    return(
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Layout/>}>
+                    <Route index element={<Home/>}/>
+                    <Route path="Product_Layout" element={<Productlayout/>}>
+                        <Route index element={<Mens/>}/>
+                        <Route path="Product_Layout/Womens" element={<Womens/>}/>
+                        <Route path="Product_Layout/Kids" element={<Kids/>}/> 
+                    </Route>
+                    <Route path="Add_product" element={<Add_products/>}/>
+                    <Route path="User" element={<User/>}/>
+                </Route>
+            </Routes>
+        </BrowserRouter>
+    )
 }
-
 export default App;
