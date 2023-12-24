@@ -1,0 +1,318 @@
+@font-face {
+  font-family: great;
+  src: url(../Fonts/GreatVibes-Regular.ttf);
+}
+@font-face {
+  font-family: quick;
+  src: url(../Fonts/Quicksand-Regular.ttf);
+}
+@font-face {
+  font-family: edu;
+  src: url(../Fonts/EduTASBeginner-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: mon;
+  src: url(../Fonts/Montserrat-Italic-VariableFont_wght.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.layout_body{
+  background-color: rgb(153, 149, 149);
+  height: fit-content;
+  width: 100%;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  align-items: center;
+}
+.navbar a{
+  color: black;
+  text-decoration: none;
+}
+.navbar a:hover{
+  text-decoration:underline;
+}
+.layout_heading{
+  font-family: great;
+}
+.nav_left{
+  display: flex;
+  gap: 30px;
+  font-family: quick;
+  font-weight: 800;
+}
+.nav_right{
+  display: flex;
+  gap: 30px;
+  font-family: quick;
+  font-weight: 800;
+}
+
+
+
+
+.home_body{
+  background-image:whitesmoke;
+}
+.home_banner-out{
+  padding: 50px 80px;
+}
+.home_banner{
+  background-image: url(https://cdn.allbirds.com/image/upload/f_auto,q_auto,w_1792/cms/75oVd6fFpvRGjRVOkbCyyc/7727c018445a2c2764344a0d24faa2e9/23Q3-FallLookbook-Hero-Desktop-Lifestyle-M.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+}
+.home_banner-inside{
+  color: white;
+  
+}
+.banner_head{
+  font-size: 50px;
+}
+.banner_body{
+  text-align: center;
+  font-size: 15px;
+}
+.home_heading{
+  font-family:sans-serif;
+  text-align: center;
+  font-size: 40px;
+}
+hr{
+  align-content: center;
+  margin: 30px 200px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+.home_fav{
+  display: flex;
+  justify-content:space-around;
+  margin: 50px 0px;
+}
+.search{
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.hidden{
+  transform: translateX(-200px);
+  display: block;
+}
+.input{
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+}
+.input input{
+  display: none;
+}
+
+.input i {
+  font-size: 14px;
+}
+
+
+.product_nav_body{
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background:linear-gradient(rgb(153, 149, 149),wheat);
+}
+.product_nav{
+  margin: 30px 150px;
+  background-color: rgb(55, 47, 20);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  border-radius: 20px;
+}
+.product_nav a{
+  color: azure;
+  text-decoration: none;
+  font-size: 20px;
+}
+.product_nav a:hover{
+  transform: scale();
+  transition: .5s ease-in-out;
+  background-color:antiquewhite;
+  padding: 5px;
+  color: black;
+  border-radius: 5px;
+}
+.nav{
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+  padding: 5px;
+}
+.nav:hover{
+  transform: scale(1.3);
+  transition: 0.5s ease-in-out;
+}
+
+
+
+
+.mens_body{
+  background-color:wheat;
+  padding: 15px 25px;
+}
+.mens_heading{
+  font-family: great;
+  margin-top: 20px;
+  font-size: 50px;
+  font-weight:bolder;
+}
+.mens_shirts{
+  margin: 35px 25px;
+}
+.shirt_img{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.img{
+  position: relative;
+}
+.img img{
+  display: block;
+  margin: auto;
+}
+.content{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, .6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s ease-in-out;
+}
+.content:hover{
+  opacity: 1;
+}
+.content h1{
+  color:azure;
+}
+.content p{
+  color: aliceblue;
+}
+
+
+
+
+.add_product_body{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: antiquewhite;
+  align-items: center;
+}
+.addp_webpage{
+  display: flex;
+  gap: 50px;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 30px 20px 50px 20px;
+  width: fit-content;
+  align-items: center;
+  background-color: white;
+}
+.addp_form{
+  
+  font-size: 25px;
+  height: 503px;
+}
+.addp_input{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.addp_input input{
+  font-size: 20px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.addp_button{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.addp_button button{
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.addp_button button:hover{
+  background-color: black;
+  color: silver;
+  transition: .5s ease-in-out;
+  transform: scale(1.3);
+}
+
+
+
+
+.user_body{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color:burlywood;
+  align-items: center;
+}
+.user_webpage{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  margin-top: -50px;
+}
+.login_form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:max-content;
+}
+.user_heading{
+  font-size: larger;
+  font-family: mon;
+  font-weight: 600;
+}
+.user_para{
+  font-family:edu;
+  font-size: 23px;
+}
+.user_button button{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: silver;
+  font-size: large;
+}
+.user_button button:hover{
+  color: orange;
+  text-decoration: underline;
+}
+.forgot_para{
+  margin-top: 10px;
+  font-size: 17px;
+}
+.user_form{
+  font-size: 25px;
+}
