@@ -21,7 +21,11 @@ function Add_products(){
                     </div>
                     <div className="addp_input">
                         <label>Product Category: </label>
-                        <input type="text" placeholder="eg:Men or Women"></input>
+                        <select className="cat_gender">
+                            <option value={'Male'}>Male</option>
+                            <option value={'Female'}>Female</option>
+                            <option value={'Kids'}>Kids</option>
+                        </select>
                     </div>
                     <div className="addp_input">
                         <label>Product Price: </label>
@@ -29,7 +33,7 @@ function Add_products(){
                     </div>
                     <div className="addp_input">
                         <label>Product Quantity: </label>
-                        <input type="text" placeholder="5"></input>
+                        <input type="number" placeholder="5"></input>
                     </div>
                     <div className="addp_button">
                         <div><button type="submit">Add-Product</button> </div>
