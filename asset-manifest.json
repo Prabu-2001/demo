@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/demo/static/css/main.e5d747ae.css",
+    "main.js": "/demo/static/js/main.cb8d99fa.js",
+    "static/media/Montserrat-Italic-VariableFont_wght.ttf": "/demo/static/media/Montserrat-Italic-VariableFont_wght.7451547bd28d8dddbeea.ttf",
+    "static/media/GreatVibes-Regular.ttf": "/demo/static/media/GreatVibes-Regular.6d246c3b51d7eb58b13a.ttf",
+    "static/media/Quicksand-Regular.ttf": "/demo/static/media/Quicksand-Regular.67e7ce07307c681fb49d.ttf",
+    "static/media/EduTASBeginner-VariableFont_wght.ttf": "/demo/static/media/EduTASBeginner-VariableFont_wght.d7d21e081f7f219af05f.ttf",
+    "index.html": "/demo/index.html",
+    "main.e5d747ae.css.map": "/demo/static/css/main.e5d747ae.css.map",
+    "main.cb8d99fa.js.map": "/demo/static/js/main.cb8d99fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5d747ae.css",
+    "static/js/main.cb8d99fa.js"
+  ]
+}
